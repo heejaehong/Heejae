@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 5.7.12, for osx10.9 (x86_64)
+--
+-- Host: localhost    Database: laravelproject
+-- ------------------------------------------------------
+-- Server version	5.7.16
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `menus`
+--
+
+DROP TABLE IF EXISTS `menus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `menus` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `menu_id` int(10) unsigned NOT NULL,
+  `navi` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `href` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menus`
+--
+
+LOCK TABLES `menus` WRITE;
+/*!40000 ALTER TABLE `menus` DISABLE KEYS */;
+INSERT INTO `menus` VALUES (1,1,'Home','2014-11-18 23:23:10','2015-08-16 22:30:00',NULL),(2,2,'Features','2015-11-11 18:17:29','2014-11-26 10:05:39',''),(3,3,'Who We are','2015-01-21 07:43:06','2015-06-28 15:58:39',NULL),(4,4,'Service','2015-05-18 12:55:31','2015-07-18 07:41:06','service'),(5,5,'Our Work','2015-03-10 03:44:20','2015-05-02 03:42:43','project'),(6,6,'Shop','2015-10-26 03:30:13','2015-06-03 19:51:42',NULL),(7,7,'Contact Us','2015-11-12 19:34:57','2015-07-19 01:15:31',''),(8,8,'News','2015-01-13 10:18:02','2015-11-11 10:13:50',''),(9,9,'placeat','2014-12-05 17:06:39','2015-04-06 19:25:45',NULL),(10,10,'possimus','2015-04-06 00:52:07','2014-11-28 11:14:25',NULL),(11,11,'qui','2015-10-03 10:29:52','2015-03-13 05:03:59',NULL),(12,12,'aut','2015-10-03 03:44:10','2015-06-09 05:58:35',NULL),(13,13,'et','2015-10-04 10:05:16','2015-04-01 22:52:29',NULL),(14,14,'qui','2015-04-12 18:20:13','2015-03-04 05:13:41',NULL),(15,15,'ab','2015-06-29 00:31:55','2015-04-27 20:56:00',NULL),(16,16,'repellendus','2014-11-28 06:51:25','2015-04-01 01:43:17',NULL),(17,17,'necessitatibus','2015-05-19 11:29:46','2015-07-09 11:18:21',NULL),(18,18,'rerum','2015-05-20 08:33:07','2015-11-17 08:34:24',NULL),(19,19,'quia','2015-04-03 09:18:07','2015-09-18 14:02:28',NULL),(20,20,'perferendis','2015-04-29 06:46:39','2015-11-07 23:00:58',NULL);
+/*!40000 ALTER TABLE `menus` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-11-19 21:24:08

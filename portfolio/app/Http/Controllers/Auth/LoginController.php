@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/admin'; //login 후 admin으로 이동
 
     /**
      * Create a new controller instance.

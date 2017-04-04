@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html eng="en">
+<head>
+<meta charset="UTF-8">
+	<title>Heidi's Portfolio</title>
+<script src="js/jQuery-1.12.4/jquery-1.12.4.min.js"></script>
+<link href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+  
+<body>
+	<div class="container-fluid">
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#homePage">HOME</a></li>	
+						<li><a href="#aboutPage">ABOUT</a></li>
+						<li><a href="#portfolioPage">PORTFOLIO</a></li>
+						<li><a href="#contactPage">CONTACT</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-2 col-md-2">
+				<div class="navi_rap nopadding nomargin">
+					<div class="home_image">
+						<a href="#homePage">
+							<img src="images/Home/home_image.jpg" id="home_image" alt="home_image" class="img-circle">
+						</a>
+					</div>
+
+					<div class="navi">
+						<ul>
+							<li><a href="#homePage">HOME</a></li>	
+							<span class="line"></span>
+							<li><a href="#aboutPage">ABOUT</a></li>
+							<span class="line"></span>
+							<li><a href="#portfolioPage">PORTFOLIO</a></li>
+							<span class="line"></span>
+							<li><a href="#contactPage">CONTACT</a></li>
+							<span class="line"></span>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-10 col-md-10 contents_rap nopadding">
+					<!-- home_rap start -->
+					<div class="home_rap" id="homePage">
+						<div class="row nomargin nopadding">
+							<div class="col-xs-12 col-sm-6 col-md-3 photo">
+								<img src="images/Home/image1Inactive.jpg" id="image1" alt="image1">
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 photo">
+								<img src="images/Home/image2Inactive.jpg" id="image2" alt="image2">
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 photo">
+								<img src="images/Home/image3Inactive.jpg" id="image3" alt="image3">
+							</div>
+							<div class="hidden-xs col-sm-6 col-md-3 photo">
+								<img src="images/Home/image4Inactive.jpg" id="image4" alt="image4">
+							</div>
+						</div>
+
+						<div class="row nomargin nopadding">
+							<div class="hidden-xs col-sm-6 col-md-3 photo">
+								<img src="images/Home/image5Inactive.jpg" id="image5" alt="image5">
+							</div>
+							<div class="hidden-xs col-sm-6 col-md-3 photo">
+								<img src="images/Home/image6Inactive.jpg" id="image6" alt="image6">
+							</div>
+							<div class="hidden-xs hidden-sm col-md-3 photo">
+								<img src="images/Home/image7Inactive.jpg" id="image7" alt="image7">
+							</div>
+							<div class="hidden-xs hidden-sm col-md-3 photo">
+								<img src="images/Home/image8Inactive.jpg" id="image8" alt="image8">
+							</div>
+						</div>
+
+						<div class="row nomargin nopadding">
+							<div class="hidden-xs hidden-sm col-md-3 photo">
+								<img src="images/Home/image9Inactive.jpg" id="image9" alt="image9">
+							</div>
+							<div class="hidden-xs hidden-sm col-md-3 photo">
+								<img src="images/Home/image10Inactive.jpg" id="image10" alt="image10">
+							</div>
+							<div class="hidden-xs hidden-sm col-md-3 photo">
+								<img src="images/Home/image11Inactive.jpg" id="image11" alt="image11">
+							</div>
+							<div class="hidden-xs hidden-sm col-md-3 photo">
+								<img src="images/Home/image12Inactive.jpg" id="image12" alt="image12">
+							</div>
+						</div>
+					</div>
+					<!-- home_rap end-->
+
+					<!-- about_rap start -->
+					<div class="about_rap" id="aboutPage">
+						<div class="about">
+							<div class="row nomargin nopadding">
+								<div class="col-xs-12 col-sm-12 col-md-12 contents about_contents">
+									<div class="aboutText">
+										<h1>About</h1>
+									</div>
+
+									<div class="profileImage">
+										<img src="images/About/Heidi.jpg" alt="ProfileImage" class="img-circle">
+									</div>
+									<div class="aboutText">
+										<h4>Hi! I'm Heidi, a web design & developer!</h4>
+										<br>
+										<h5>I'm from South Korea. And I'm stydung in New Zealand.</h5>
+										<h6>I worked as a programmer for a telecom company in Korea for 2 years.</h6>
+										<h7>I like make a website design and development.</h7>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- about_rap end -->
+
+					<!-- portfolio_rap start -->
+					<div class="portfolio_rap" id="portfolioPage">
+						<div class="portfolio">
+							<div class="row nomargin nopadding">
+								<div class="col-md-12 contents portfolio_contents">
+									<div class="PortfolioText">
+										<h1>Portfolio</h1>
+									</div>
+		
+									<div class="works_rap">
+										<div class="row nomargin nopadding">
+											<div class="col-sm-4 col-md-4 work">
+												<a data-toggle="modal" data-target="#myModal_1">
+													<img src="images/Portfolio/Jaytronics2.jpg" id="Jaytronics" alt="Jaytronics">
+												</a>
+											</div>
+											
+											<div class="col-sm-4 col-md-4 work">
+												<a data-toggle="modal" data-target="#myModal_2">
+													<img src="images/Portfolio/Hyukoh2.jpg" id="Hyukoh" alt="Hyukoh">
+												</a>	
+											</div>
+								        
+											<div class="col-sm-4 col-md-4 work">
+												<a data-toggle="modal" data-target="#myModal_3">
+												<img src="images/Portfolio/photoshop.jpg" id="photoshop" alt="photoshop">
+												</a>
+											</div>
+										</div>
+
+										<div class="row nomargin nopadding">
+
+											<div class="col-sm-4 col-md-4 work">
+												<a data-toggle="modal" data-target="#myModal_4">		
+													<img src="images/Portfolio/Musicvideo/Musicvideo.jpg" id="MV" alt="MV">	
+												</a>
+											</div>
+
+											<div class="col-sm-4 col-md-4 work">
+												<a data-toggle="modal" data-target="#myModal_5">								
+													<img src="images/Portfolio/Tasman2.jpg" id="Tasman" alt="Tasman">
+												</a>
+
+											</div>
+
+											<div class="col-sm-4 col-md-4 work">
+												<a data-toggle="modal" data-target="#myModal_6">								
+													<img src="images/Portfolio/Lonopoly2.jpg" id="Lonopoly" alt="Lonopoly">	
+												</a>
+											</div>
+
+
+											
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- portfolio_rap end -->
+
+					<!-- contact_rap start -->
+					<div class="contact_rap nomargin nopadding" id="contactPage">
+						<div class="row nomargin nopadding">
+							<div class="col-md-12">
+								<div class="contactText">
+									<h1>Contact</h1>
+								</div>
+								<div class="row nomargin nopadding">
+									<div class="col-sm-12 col-md-6 contactBox">
+										<form class="form-horizontal">
+										  <div class="form-group">
+										    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+										    <div class="col-sm-10">
+										      <input type="text" class="form-control" id="inputName3">
+										    </div>
+										  </div>
+										  <div class="form-group">
+										    <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+										    <div class="col-sm-10">
+										      <input type="email" class="form-control" id="inputEmail3">
+										    </div>
+										  </div>
+										  <div class="form-group">
+										    <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+										    <div class="col-sm-10">
+										      <textarea class="form-control" id="inputMessage3" rows="5">
+										      </textarea>
+										    </div>	
+										  </div>										  
+										  <div class="form-group">
+										    <div class="col-sm-offset-2 col-sm-10">
+										      <button type="submit" class="btn btn-default">Send</button>
+										    </div>
+										  </div>
+										</form>
+
+									</div>
+
+									<div class="col-sm-12 col-md-6 contactBox">
+										<div class="contactInfo">
+											<h2>Get in touch</h2>
+										<div class="row nomargin nopadding email">
+											<div class="col-md-2 icon">
+												<a href="mailto:heejaehong@gmail.com"><img src="images/Contact/email.png" id="email_icon" alt="email">
+												</a>
+											</div>
+											<div class="col-md-10 contact_text">
+												<a href="mailto:heejaehong@gmail.com"><h3>heejaehong@gmail.com</h3></a>
+											</div>
+										</div>
+
+										<div class="row nomargin nopadding location">
+											<div class="col-md-2 icon">
+												<a href="https://www.google.co.nz/maps/place/290+Queen+St,+Auckland,+1010/@-36.8506384,174.7627144,17z/data=!3m1!4b1!4m5!3m4!1s0x6d0d47e53acb30f9:0xcdba81ddcbdef30c!8m2!3d-36.8506384!4d174.7649031?hl=en">
+													<img src="images/Contact/location2.png" id="location_icon" alt="location">
+												</a>
+											</div>
+											<div class="col-md-10 contact_text">
+												<h3>290 Queen street, Auckland</h3>
+											</div>
+										</div>
+
+										<div class="row nomargin nopadding phone">
+											<div class="col-md-2 icon">
+												<img src="images/Contact/phone2.png" id="phone_icon" alt="phone">
+											</div>
+											<div class="col-md-10 contact_text">
+												<h3>021 297 2226</h3>
+											</div>
+										</div>
+
+											<div class="row nomargin nopadding contact_social">
+												<div class="contactSocial_icon">
+													<a href="https://www.facebook.com/heidiheejae.hong">
+														<img src="images/Contact/facebookInactive.png" id="facebook" alt="facebookInactive">
+													</a>
+													<a href="https://www.instagram.com/heejae_heidi/?hl=en">
+														<img src="images/Contact/instagramInactive.png" id="instagram" alt="instagram2Inactive">
+													</a>
+													<a href="https://www.linkedin.com/in/heidi-hong-471088122?trk=nav_responsive_tab_profile_pic">
+														<img src="images/Contact/linkedinInactive.png" id="linkedin" alt="linkedinInactive">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>					
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- contact_rap end -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal start -->
+	<div class="modal_rap">
+		<!-- Jaytronics Modal start-->
+		<div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Jaytronics</h4>
+		      </div>
+		      <div class="modal-body">
+		        <!-- carousel start -->
+
+				<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel1" data-slide-to="1"></li>
+				    <li data-target="#myCarousel1" data-slide-to="2"></li>
+				    <li data-target="#myCarousel1" data-slide-to="3"></li>
+				    <li data-target="#myCarousel1" data-slide-to="4"></li>
+				    <li data-target="#myCarousel1" data-slide-to="5"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+
+				    <div class="item active">
+					      <img src="images/Portfolio/Jaytronics/Home page_mod.png" alt="jaytronics_home">
+				    </div>
+
+				    <div class="item">
+					      <img src="images/Portfolio/Jaytronics/headphone.png" alt="jaytronics_headphone">
+				    </div>
+
+				    <div class="item">
+					      <img src="images/Portfolio/Jaytronics/mice.png" alt="jaytronics_mice">
+				    </div>
+
+				    <div class="item">
+					      <img src="images/Portfolio/Jaytronics/carspeaker.png" alt="jaytronics_carspeaker">
+				    </div>
+
+				    <div class="item">
+					      <img src="images/Portfolio/Jaytronics/teblets.png" alt="jaytronics_teblets">
+				    </div>
+
+				    <div class="item">
+					      <img src="images/Portfolio/Jaytronics/keyboard.png" alt="jaytronics_keyboard">
+				    </div>
+
+				   </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>		        
+		        <!-- carousel end -->
+
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+		<!-- Jaytronics Modal end -->
+
+		<!-- Hyukoh Modal start-->
+		<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Hyukoh fan page Web design</h4>
+		      </div>
+		      <div class="modal-body">
+		        <!-- carousel start -->
+
+				<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel2" data-slide-to="1"></li>
+				    <li data-target="#myCarousel2" data-slide-to="2"></li>
+				    <li data-target="#myCarousel2" data-slide-to="3"></li>
+				    <li data-target="#myCarousel2" data-slide-to="4"></li>
+				    <li data-target="#myCarousel2" data-slide-to="5"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+
+				    <div class="item active">
+	                    <img src="images/Portfolio/Hyukoh/home.png" alt="hyukoh_home">
+				    </div>
+
+				    <div class="item">
+	                    <img src="images/Portfolio/Hyukoh/band.png" alt="hyukoh_band">
+				    </div>
+
+				    <div class="item">
+	                    <img src="images/Portfolio/Hyukoh/tour.png" alt="hyukoh_tour">
+				    </div>
+
+				    <div class="item">
+	                    <img src="images/Portfolio/Hyukoh/album.png" alt="hyukoh_album">
+				    </div>
+
+				    <div class="item">
+	                    <img src="images/Portfolio/Hyukoh/gallery.png" alt="hyukoh_gallery">
+				    </div>
+
+				    <div class="item">
+	                    <img src="images/Portfolio/Hyukoh/contact.png" alt="hyukoh_contact">
+				    </div>
+
+				   </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>		        
+		        <!-- carousel end -->
+
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+		<!-- Hyukoh Modal end -->
+
+		<!-- Photoshop Modal start-->
+		<div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Cocacola Website & Magazine design</h4>
+		      </div>
+		      <div class="modal-body">
+		        <!-- carousel start -->
+
+				<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel3" data-slide-to="1"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+
+				    <div class="item active">
+	                    <img src="images/Portfolio/Photoshop/App.jpg" alt="hyukoh_home">
+				    </div>
+
+				    <div class="item">
+	                    <img src="images/Portfolio/Photoshop/Magazine.jpg" alt="hyukoh_band">
+				    </div>
+
+				   </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>		        
+		        <!-- carousel end -->
+
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+		<!-- Photoshop Modal end -->
+
+		<!-- MV Modal start-->
+		<div class="modal fade" id="myModal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Music video</h4>
+		      </div>
+
+		      <div class="modal-body">
+				<iframe src="https://player.vimeo.com/video/190478070?portrait=0" width="560" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			  </div>
+			  
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+		<!-- MV Modal end -->
+
+		<!-- Tasman Modal start-->
+		<div class="modal fade" id="myModal_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Tasman video</h4>
+		      </div>
+
+		      <div class="modal-body">
+				<iframe src="https://player.vimeo.com/video/188364317?portrait=0" width="570" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			  </div>
+
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+		<!-- Tasman Modal end -->
+
+		<!-- Lonopoly Modal start-->
+		<div class="modal fade" id="myModal_6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Lonopoly video</h4>
+		      </div>
+
+		      <div class="modal-body">
+				<iframe src="https://player.vimeo.com/video/190336169?portrait=0" width="560" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			  </div>
+			  
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+		<!-- Lonopoly Modal end -->
+
+
+	</div>
+	<!-- Modal end -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jQuery-1.12.4/jquery-1.12.4.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+
+
+</body>
+</html>

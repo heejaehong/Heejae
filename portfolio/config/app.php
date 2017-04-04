@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Heidi',
 
     /*
     |--------------------------------------------------------------------------
@@ -162,6 +162,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        //ext library by Heejae 2017.03.23
+        AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -225,7 +228,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
 
+
+    ],
+    'imagePath'=>[
+        'src'=>'img/',
     ],
 
 ];

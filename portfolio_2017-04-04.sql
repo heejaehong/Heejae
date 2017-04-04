@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.16)
 # Database: portfolio
-# Generation Time: 2017-04-04 10:14:06 +0000
+# Generation Time: 2017-04-04 11:35:04 +0000
 # ************************************************************
 
 
@@ -299,17 +299,18 @@ CREATE TABLE `works` (
   `status` enum('complete','processing') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'complete',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
+  `link` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 LOCK TABLES `works` WRITE;
 /*!40000 ALTER TABLE `works` DISABLE KEYS */;
 
-INSERT INTO `works` (`id`, `order`, `title`, `description`, `slug`, `title_image`, `status`, `created_at`, `updated_at`)
+INSERT INTO `works` (`id`, `order`, `title`, `description`, `slug`, `title_image`, `status`, `created_at`, `updated_at`, `link`)
 VALUES
-	(1,1,'BusBee(Real time NZ bus web app)','Using HTML5, CSS3, javascript and jQuery, React.js and laravel','','busbee.jpg','complete',NULL,NULL),
-	(2,2,'Jaytronics(Electronic shop web page)','Using opencart','','Jaytronics.png','complete',NULL,NULL),
-	(4,3,'Personal portfolio web site','Using HTML5/CSS3/Javascript','','website.jpg','complete',NULL,NULL);
+	(1,1,'BusBee(Real time NZ bus web app)','Using HTML5, CSS3, javascript and jQuery, React.js and laravel','','busbee.jpg','complete',NULL,NULL,'https://github.com/leefecu/busbee-fe'),
+	(2,2,'Jaytronics(Electronic shop web page)','Using opencart','','Jaytronics.png','complete',NULL,NULL,'https://github.com/heejaehong/Heejae/tree/master/Opencart'),
+	(4,3,'Personal portfolio web site','Using HTML5/CSS3/Javascript','','website.jpg','complete',NULL,NULL,'https://github.com/heejaehong/Heejae/tree/master/personal_portfolio');
 
 /*!40000 ALTER TABLE `works` ENABLE KEYS */;
 UNLOCK TABLES;

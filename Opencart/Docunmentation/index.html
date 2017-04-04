@@ -1,0 +1,503 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Techstore - The Premium Responsive OpenCart Template</title>
+<link rel="stylesheet" href="css/documenter_style.css" media="all">
+<link rel="stylesheet" href="css/custom.css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open Sans:700italic,700,400italic,400,600&amp;subset=latin' rel='stylesheet' type='text/css'>
+<script src="js/jquery.1.6.4.js"></script>
+<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+
+<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+<script>document.createElement('section');var duration=1000,easing='easeOutQuad';</script>
+<script src="js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="js/prettyphoto/css/prettyPhoto.css" media="all" />
+<script type="text/javascript" src="js/prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+  jQuery( function($) {
+    
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+      opacity: 0.5,
+      deeplinking: false,
+      ie6_fallback: false,
+      social_tools: ''
+    });
+
+  });
+  </script>
+<style>
+html {
+  background-color:#FFFFFF;
+  color:#383838;
+}
+    ::-moz-selection {
+background:#34aadc;
+color:#FFFFFF;
+}
+::selection {
+  background:#CFD6E4;
+  color:#DDDDDD;
+}
+#documenter_sidebar #documenter_logo {
+  background-image:url();
+}
+a {
+  color:#0000FF;
+}
+hr {
+  border-top:1px solid #EBEBEB;
+  border-bottom:1px solid #FFFFFF;
+}
+#documenter_sidebar, #documenter_sidebar ol a {
+  background-color:#34aadc;
+  color:#222222;
+}
+#documenter_sidebar ol a {
+  -webkit-text-shadow:1px 1px 0px #EEEEEE;
+  -moz-text-shadow:1px 1px 0px #EEEEEE;
+
+}
+#documenter_sidebar ol {
+  border-top:1px solid #CFD6E4;
+}
+#documenter_sidebar ol a {
+  border-top:1px solid #EEEEEE;
+  border-bottom:1px solid #CFD6E4;
+  color:#FFFFFF;
+
+}
+#documenter_sidebar ol a:hover {
+  background:#CFD6E4;
+  color:#FFFFFF;
+  border-top:1px solid #CFD6E4;
+
+}
+#documenter_sidebar ol a.current {
+  background:#CFD6E4;
+  color:#666666;
+  border-top:1px solid #CFD6E4;
+}
+#documenter_copyright {
+  display:block !important;
+  visibility:visible !important;
+}
+</style>
+</head>
+<body>
+<div id="documenter_sidebar">
+  <a id="logo" href="http://www.themeglobal.com" rel="nofollow"><img src="assets/images/tg_logo.png" /></a>
+  <ol id="documenter_nav">
+    <li><a class="current" href="#documenter_cover">Start</a></li>
+    <li><a href="#manualinstallation">Manual Installation</a></li>
+	<li><a href="#setup">Setup The Template</a></li>
+	<li><a href="#layout">Layout</a></li>
+	<li><a href="#modules">Modules</a></li>
+	<li><a href="#megamenu">TG Techstore MegaMenu</a></li>
+	<li><a href="#slider">TG Techstore Revolution Slider </a></li>
+	<li><a href="#filterproduct">TG Techstore Filter Product</a></li>
+	<li><a href="#newsblog">News/Blog</a></li>
+	<li><a href="#bfilter">Brainy Filter</a></li>
+	
+  </ol>
+  <div id="documenter_copyright">&copy; 2015 themeglobal.com<br>
+    made with the <a href="http://rxa.li/documenter" rel="nofollow">Documenter v1.6</a> </div>
+</div>
+<div id="documenter_content">
+  <section id="documenter_cover">
+    <h1><a href="http://themeglobal.com">Techstore - The Premium Responsive OpenCart Template</a></h1>
+
+    <hr class="special">
+    <ul>
+      <li><strong>Updated:</strong> March 2016</li>
+      <li>OpenCart Themes by <a href="http://www.themeglobal.com">ThemeGlobal.com</a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </section>
+  
+  
+  <section id="manualinstallation">
+    <h3>Manual Installation</h3>
+    <hr class="notop">
+    <p> Before installing the Techstore theme, it is assumed that you have a working <a href="http://www.opencart.com/index.php?route=documentation/documentation&amp;path=4" target="_blank">OpenCart installation</a>.</p>
+    <p><strong>We recommend to use this theme on a clean installation or existing shops without custom modifications. </strong>    </p>
+	<p><strong>IMPORTANT!
+Although Techstore doesn't overwrite any core files is a good practice to backup your files and sql database before making any upgrades or changes.   </strong>    </p>
+    <hr class="custom">
+    <p><span class="s_step" style="margin-top: -3px;">1</span><strong class="s_f_14">Install VQMOD</strong></p>
+    <p><strong>IMPORTANT!</strong> If your OpenCart version is 2.2.x.x or you already have Vqmod skip this step.</p>
+	<p>Otherwise, get the latest release here <a href="https://github.com/vqmod/vqmod/releases">https://github.com/vqmod/vqmod/releases</a>. Download the lastest vqmod-x.x.x-opencart.zip file.</p>
+	<p>Follow the instructions to install on your server <a href="https://github.com/vqmod/vqmod/wiki/Installing-vQmod-on-OpenCart">https://github.com/vqmod/vqmod/wiki/Installing-vQmod-on-OpenCart</a>.</p>
+	
+	
+	
+	<p><span class="s_step" style="margin-top: -3px;">2</span><strong class="s_f_14">Upload theme files</strong></p>
+    <p>Unzip the &quot;tg_techstore_x.x.x.x_version_x.x.zip &quot; you have downloaded from ThemeGlobal.com to a local folder on your computer. Enter the <strong>tg_techstore_x.x.x.x_version_x.x</strong> folder. </p>
+    <p>Select the folder that matches to your OpenCart version and upload all the files from &quot;OpenCart x.x.x.x&quot; to the directory you have installed OpenCart in. </p>
+	
+   
+	</section>
+  
+   <section id="setup">
+    <h3>Setup The Template</h3>
+    <hr class="notop">
+    <p>The instruction how to configures the template to look like the <a href="http://oc.themeglobal.com/techstore/">DEMO
+SITE</a></p>
+    <p><strong>We recommend to use this theme on a clean installation or existing shops without custom modifications. </strong>    </p>
+	<p><strong>IMPORTANT!
+Although Techstore doesn't overwrite any core files is a good practice to backup your files and sql database before making any upgrades or changes. </strong>    </p>
+    <hr class="custom">
+
+    <p><span class="s_step" style="margin-top: -3px;">1</span><strong class="s_f_14">Enable TG TECHSTORE SETTINGS</strong></p>
+    <p>Go to Admin > Extensions > Modules</p>
+	<p>Find a module name <strong>TG TECHSTORE SETTINGS</strong> click on Install.
+	
+	<p><span class="s_step" style="margin-top: -3px;">2 </span><strong class="s_f_14" style="color: #d63131;">IMPORTANT!</strong><strong class="s_f_14"> Install Template System Files</strong></p>
+	After installing the TG TECHSTORE SETTINGS go to front page of your store or to this link http://yourdomain.com/themeinstall/index.php 
+	<p>You should see the message: "TEMPLATE HAS BEEN INSTALLED ON YOUR SYSTEM!" Otherwise please contact <a href="http://themeglobal.com/">our support staff</a> to get help.</p>
+	
+	<p><span class="s_step" style="margin-top: -3px;">3</span><strong class="s_f_14">Activate default Skin and Install Sample Data</strong></p>
+	<p>Go to Admin > Extensions > Modules > TG TECHSTORE SETTINGS > Edit</p>You should see the image presented below:</p>
+	<p><img src="assets/images/setting.jpg" alt="Image Setting"></p>
+	
+	<p>From the list choose the skin <strong>techstore_default</strong> and press the button Active skin.</p>
+	
+	<p>After activating the <strong>skin</strong> you should see the image presented below:</p>
+	<p><img src="assets/images/setting1.jpg" alt="Image Setting"></p>
+	
+	<p><strong>Go to Install Data tab and Press install button for the module you want with the sample data or click install for All TG Techstore Modules to install all modules at once. After that click Save Button.</strong></p>
+	
+	<p>&nbsp;</p>
+  <h2>Congratulations! Installation is complete. Go back to your main store front to view the template installed on your site.</h2>
+	
+	</section>
+	
+	
+	
+  
+  <section id="layout">
+    <h3>Layout</h3>
+	<p><img src="http://oc.themeglobal.com/images/techstore/layout.jpg" alt="Image Setting"></p>
+	</section>
+	
+		<section id="modules">
+    <h3>Modules</h3>
+	<p><img src="http://oc.themeglobal.com/images/techstore/module.jpg" alt="Image Setting"></p>
+
+	<p>&nbsp;</p>
+	
+	<p style="margin-top: 70px;"><span class="s_step" style="margin-top: -3px;">M1</span><strong class="s_f_14">Hotline Text</strong></p>
+	<p>You can change the text from Admin > Extensions > Modules > TG TECHSTORE SETTINGS > Edit > tab General & Translations > Insert Header Hotline Text: > Save</p>
+
+	<p style="margin-top: 70px;"><span class="s_step" style="margin-top: -3px;">M2</span><strong class="s_f_14">Logo Image</strong></p>
+	<p>You can change the image from Admin > System > Settings > Edit your Store > tab Image > Click on Store Logo image > Upload your logo > Save</p>
+		
+	</section>
+	
+	<section id="megamenu">
+    <p><span class="s_step" style="margin-top: -3px;">M3</span><strong class="s_f_14">TG Techstore MegaMenu</strong></p>
+	<p>This module allows you to manage your own header menu instead of the default menu very easily without coding knowlege required. When this module is disabled the Default Menu will show.</p>
+	Here is the example how to create the category ALL PRODUCTS like in our demo site.</p>
+	<p><img src="http://oc.themeglobal.com/images/Techstore/megamenu1.jpg" alt="Image Setting"></p>
+	<p><strong>1.</strong> Go to Admin > Extensions > Modules > TG Techstore MegaMenu > Edit > Create new item </p>
+	
+	<div>
+		<p class="c_2">
+			<strong>Item setting</strong></p>
+	</div>
+
+<ul>
+	<li class="p1">
+		<strong>Name</strong> - Category name</li>
+	<li class="p1">
+		<strong>Description</strong> - Small text under Category name</li>
+	<li class="p1">
+		<strong>Icon</strong> - You can upload icon for category. Icon will be displayed before category name</li>
+	<li class="p1">
+		<strong>Link</strong> - url to category</li>
+	<li class="p1">
+		<strong>Link in new window</strong> - enable if you want to open url in new window.</li>
+	<li class="p1">
+		<strong>Position</strong> - Select where you want to have edited category should show. On left or right side.</li>
+	<li class="p1">
+		<strong>Submenu width</strong> - Width of submenu. You can use % of &quot;px&quot;.</li>
+	<li class="p1">
+		<strong>Display menu on:</strong>
+		<ul>
+			<li class="p1">
+				Hover - Default hover</li>
+			<li class="p1">
+				Hover intent - Opened for few seconds after hover over</li>
+			<li class="p1">
+				Click - Click to open submenu<span id="cke_bm_518E" style="display: none;">&nbsp;</span></li>
+		</ul>
+	</li>
+</ul>
+
+<div class="p1">
+	<div>
+		<p class="c_3">
+			<strong>Content item</strong></p>
+	</div>
+</div>
+<div class="p1">
+	This fields are only for Subcategories.</div>
+<ul>
+	<li class="p1">
+		<strong>Content width</strong> - width of edited subcategory. 12 is full width 3/12 = 1/4</li>
+	<li class="p1">
+		<strong>Content type </strong>- choose what kind of content will be in this subcategory.</li>
+</ul>
+<div>
+
+
+<p><strong>2.</strong> Creating a parent category ALL PRODUCTS. Add informations as below and click save.</p>
+<ul>
+	<li class="p1">
+		<strong>Name</strong> - ALL PRODUCTS
+	</li>
+	
+	<li class="p1">
+		<strong>Link</strong> - 
+	</li>
+	<li class="p1">
+		<strong>Status</strong> - enabled
+	</li>
+	<li class="p1">
+		<strong>Position</strong> - Left
+	</li>
+	<li class="p1">
+		<strong>Submenu width</strong> - 100%
+	</li>
+	
+	<li class="p1">
+		<strong>Display submenu on</strong> - Hover
+	</li>
+</ul>	
+
+<p><strong>3.</strong> Creating a submenu Headphones . Add informations as below and click save.</p>
+<ul>
+	<li class="p1">
+		<strong>Name</strong> - Headphones
+	</li>
+
+	<li class="p1">
+		<strong>Status</strong> - enabled
+	</li>
+	<li class="p1">
+		<strong>Position</strong> - Left
+	</li>
+	<li class="p1">
+		<strong>Submenu width</strong> - 100%
+	</li>
+	
+	<li class="p1">
+		<strong>Display submenu on</strong> - Hover
+	</li>
+	
+	<li class="p1">
+		<strong>Content width</strong> - 3/12
+	</li>
+	<li class="p1">
+		<strong>Content type</strong> - HTML
+		<p>You can also add Products or Categories. In this case we go with HTML.</p>
+	</li>
+	
+	<li class="p1">
+		<p>Change the HTML filed to code view mode and add the information below:</p>
+		<img src="assets/images/megamenu2.jpg" />
+		<p><strong>HTML</strong> - <textarea rows="4" cols="50"><div style="text-align:center;"><p><a href="index.php?route=product/category&amp;path=59" onclick="window.location = " index.php?route="product/category&amp;path=59&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu1.png"></a></p><p><a href="index.php?route=product/category&amp;path=59" onclick="window.location = " index.php?route="product/category&amp;path=59&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">Headphones</a></p></div></textarea></p>
+		
+	</li>
+</ul>	
+
+<p><strong>4.</strong> Doing the same for submenu S2 Fashion (Clothing).</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"></textarea></p>
+
+<p><strong>5.</strong> Doing the same for submenu Mice Logitech.</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"></textarea><div style="text-align:center;"><p style="text-align"><a href="index.php?route=product/category&amp;path=60" onclick="window.location = " index.php?route="product/category&amp;path=60&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu2.png"></a></p><p><a href="index.php?route=product/category&amp;path=60" onclick="window.location = " index.php?route="product/category&amp;path=60&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">Mice Logitech</a></p></div></p>
+
+<p><strong>6.</strong> Doing the same for submenu Tablet Keyboards.</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"><div style="text-align:center;"><p style="text-align"><a href="index.php?route=product/category&amp;path=61" onclick="window.location = " index.php?route="product/category&amp;path=61&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu3.png"></a></p>
+
+<p><a href="index.php?route=product/category&amp;path=61" onclick="window.location = " index.php?route="product/category&amp;path=61&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">Tablet Keyboards</a></p>
+
+</div></textarea></p>
+
+<p><strong>7.</strong> Doing the same for submenu Keyboards.</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"><div style="text-align:center;"><p style="text-align"><a href="index.php?route=product/category&amp;path=62" onclick="window.location = " index.php?route="product/category&amp;path=62&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu4.png"></a></p>
+
+<p><a href="index.php?route=product/category&amp;path=62" onclick="window.location = " index.php?route="product/category&amp;path=62&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">Keyboards</a></p>
+
+</div></textarea></p>
+
+<p><strong>8.</strong> Doing the same for submenu Projectors.</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"><div style="text-align:center;"><p style="text-align"><a href="index.php?route=product/category&amp;path=63" onclick="window.location = " index.php?route="product/category&amp;path=63&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu5.png"></a></p>
+
+
+<p><a href="index.php?route=product/category&amp;path=63" onclick="window.location = " index.php?route="product/category&amp;path=63&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">Projectors</a></p>
+
+
+</div></textarea></p>
+
+<p><strong>9.</strong> Doing the same for submenu Mobile Phones & Tablets.</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"><div style="text-align:center;"><p style="text-align"><a href="index.php?route=product/category&amp;path=64" onclick="window.location = " index.php?route="product/category&amp;path=64&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu6.png"></a></p>
+
+<p><a href="index.php?route=product/category&amp;path=64" onclick="window.location = " index.php?route="product/category&amp;path=64&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">Mobile Phones &amp; Tablets</a></p>
+
+</div></textarea></p>
+
+<p><strong>10.</strong> Doing the same for submenu PlayStation.</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"><div style="text-align:center;"><p style="text-align"><a href="index.php?route=product/category&amp;path=65" onclick="window.location = " index.php?route="product/category&amp;path=65&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu7.png"></a></p>
+
+<p><a href="index.php?route=product/category&amp;path=65" onclick="window.location = " index.php?route="product/category&amp;path=65&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">PlayStation</a></p>
+
+</div></textarea></p>
+
+<p><strong>11.</strong> Doing the same for submenu Business Solutions.</strong> Add informations as below and click save.</p>
+
+<p><strong>HTML</strong> - <textarea rows="4" cols="50"><div style="text-align:center;"><p style="text-align"><a href="index.php?route=product/category&amp;path=66" onclick="window.location = " index.php?route="product/category&amp;path=66&quot;;&quot;"><img alt="" src="image/catalog/techstore/megamenu8.png"></a></p>
+
+<p><a href="index.php?route=product/category&amp;path=66" onclick="window.location = " index.php?route="product/category&amp;path=66&quot;;&quot;" style="font-size: 14px; font-weight: 400;" target="_self">Business Solutions</a></p>
+
+</div></textarea></p>
+
+
+
+<p><strong>12.</strong> Drag each submenu below the parent category like in the image below:</p>
+<p><img src="assets/images/megamenu3.jpg" /></p>
+</section>
+
+<section id="slider">
+    <p><span class="s_step" style="margin-top: -3px;">M4</span><strong class="s_f_14">TG Techstore Revolution Slider</strong></p>
+	<p>TG Techstore Revolution Slider is an all-purpose slide displaying solution that allows for showing almost any kind of content with highly customizable, transitions, effects and custom animations.</p>
+
+	<p><strong>HOW TO SET SLIDERS:</strong></p>	
+	<p><strong>1.</strong> Go to Admin > Extensions > Modules > TG Techstore Revolution Slider  > Edit > tab Existing Modules > Create new slider </p>
+	<p><strong>2.</strong> In general options set:</p>
+	<ul>
+	<li class="p1">
+		<strong>Slider name</strong> - New Slider
+	</li>
+	
+	<li class="p1">
+		<strong>Width slider (px)</strong> - 1200
+	</li>
+	<li class="p1">
+		<strong>Height slider (px)</strong> - 600
+	</li>
+	
+	<li class="p1">
+		<strong>Slideshow speed</strong> - 9000
+	</li>
+	<li class="p1">
+		<strong>Layout Type</strong> - Full width
+	</li>
+	</ul>	
+	<p>Recommended size for the slider is 1200(w) and 600(h).</p>
+	
+	<p><strong>3.</strong> Than click on plus icon to add slide.</p>
+	<p><img src="assets/images/slider1.jpg" /></p>
+	<p><strong>4.</strong> Upload your image, set status to enabled, select transition effect and add your link.</p>
+	<p>You should see the image presented below:</p>
+	<p><img src="assets/images/slider2.jpg"></p>
+	<p>Add as many sliders as you want.</p>
+	<p><strong>ELEMENTS SETTINGS:</strong></p>	
+	<p>For each Slider you can add a sub text or image elements.</strong></p>
+	<p><img src="assets/images/slider3.jpg"></p>
+	<ul>
+	<li class="p1"><strong>Element type</strong> - Choose type of content in your element then add text/code in TEXT/HTML field or upload image.</li>
+	<li class="p1"><strong>Element class</strong> - Class name for edited element.</li>
+	<li class="p1"><strong>Element style(css)</strong> - Your own style for created class.</li>
+	<li class="p1"><strong>Animation class</strong> - Your own style for created class.
+		<ul>
+			<li>		lft - Long from Top</li>
+			<li>		lfb - Long from Bottom</li>
+			<li>		lfr - Long from Right</li>
+			<li>		lfl - Long from Left</li>
+			<li>		fade - fading</li>
+			<li>		sft - Short from Top</li>
+			<li>		sfb - Short from Bottom</li>
+			<li>		sfr - Short from Right</li>
+			<li>		sfl - Short from Left</li>
+		</ul>
+	</li>
+	<li class="p1"><strong>Animation Easing</strong> - special easing effect of the animation.</li>
+	<li class="p1"><strong>Animation Endeasing</strong> - special endeasing effect of the animation.</li>
+	<li class="p1"><strong>Speed</strong> - Animation speed.</li>
+	<li class="p1"><strong>Delay</strong> - Animation start time.</li>
+	<li class="p1"><strong>X</strong> - Horizontal position of the element. For example if X=100, it means left: 100px;</li>
+	<li class="p1"><strong>Y</strong> - Vertical position of the element. For example if Y=50, it means top: 50px;</li>
+	</ul>	
+	
+	<p><strong>MODULE PLACEMENT:</strong></p>	
+	<p>After setting up Slider you need to add it in module placement.</p>
+	<p><strong>1.</strong> Go to Admin > Extensions > Modules > TG Techstore Revolution Slider  > Edit > tab Module placement > Add item </p>
+	<p>Adjust the settings with the following values and click Save.</p>
+	<img src="assets/images/slider4.jpg" /></p>
+</section>	
+
+<section id="filterproduct">
+    <p> <span class="s_step" style="margin-top: -3px;">M5</span> <span class="s_step" style="margin-top: -3px;">M6</span><strong class="s_f_14">TG Techstore Filter Product</strong></p>
+	
+	<p>Allows you to create your own custom product sections and name them whatever you want. You can add any number of products to any of them and place unlimited modules with different sets of products on different pages.</p>
+	<p><strong>HOW TO ADD:</strong></p>
+	<p><strong>1.</strong>Go to Admin > Extensions > Modules > TG Techstore Filter Product > Install or Edit > Add Module</p>
+	<p><strong>MODULE TAB</strong></p>
+	<p><strong>2.</strong> Now you can add item as tab. For example in the demo site we added 6 items: Women, Men Baby, Girl, Cosmetic and New Collection. For each item you can choose where do you want to get product from: Latest Products, Special Products, Bestsellers Products, Manually choose any products or category with autocomplete suggestion</p>
+	<p><strong>MODULE SETTING</strong></p>
+	<ul>
+	<li class="p1"><strong>Carousel</strong> - turn on or off product scrolling.</li>
+	<li class="p1"><strong>Dimension (W x H) and Resize Type</strong> - you can set the size of product pictures</li>
+	
+	<li class="p1"><strong>Max Items - Max Columns - Limit Items In Carousel</strong> - you can set the number of products in one row, the number of rows as well as the number of all products in a module.</li>
+	<li class="p1"><strong>Layout</strong> - subpage on which the module is to be displayed.</li>
+	<li class="p1"><strong>Position</strong> - position, in which place the module is to be displayed.</li>
+	<li class="p1"><strong>Status</strong> - you can decide if the module is to be visible or not.</li>
+	<li class="p1"><strong>Sort Order</strong> - here you type in the numbers. The greater number you type in, the lower the module is to be displayed regarding other modules.</li>
+
+	</ul>
+	</section>	
+
+
+<section id="newsblog">	
+<p><span class="s_step" style="margin-top: -3px;font-size: 11px;">M7</span><strong class="s_f_14">News/Blog</strong></p>
+<p>The news/blog module is not included in the template. If you want to use it on your webpage, you need to purchase the module below. It is just $12 and is one of the best blog module on the market.</p>
+<p><a href="http://shopencart.com/opencart-2.x-modules/news-blog-opencart-1.5">http://shopencart.com/opencart-2.x-modules/news-blog-opencart-1.5</a>
+<p>You don't have to modify the module to fit the template. Just follow the installation instruction included in the module and your blog will look exactly the same as in demo version.</p>
+</section>
+
+	
+	<p style="margin-top: 70px;"><span class="s_step" style="margin-top: -3px;font-size: 11px;">M11</span><strong class="s_f_14">Custom Footer Block</strong></p>
+	<p>You can change the content from Admin > Extensions > Modules > TG TECHSTORE SETTINGS > Edit > tab Custom Footer > Add information for Custom Footer 1 Block or Custom Footer 2 Block > Save</p>
+	
+	<p style="margin-top: 70px;"><span class="s_step" style="margin-top: -3px;font-size: 11px;">M13</span><strong class="s_f_14">Social Media</strong></p>
+	<p>You can change the content from Admin > Extensions > Modules > TG TECHSTORE SETTINGS > Edit > tab Social Media > Add information and set status to ON > Save</p>
+	
+	<p style="margin-top: 70px;"><span class="s_step" style="margin-top: -3px;font-size: 11px;">M14</span><strong class="s_f_14">Payment</strong></p>
+	<p>You can change the content from Admin > Extensions > Modules > TG TECHSTORE SETTINGS > Edit > tab Payment > Add item > Upload your payment image > Save</p>
+	
+<section id="bfilter">	
+<p><span class="s_step" style="margin-top: -3px;font-size: 11px;">M15</span><strong class="s_f_14">Brainy Filter</strong></p>
+<p>The Brainy Filter module is not included in the template, just integrated with the theme. If you want to use it on your webpage, you need to purchase the module below. It is one of the most advanced & elegant Filter module on the market.</p>
+<p><a href="http://www.opencart.com/index.php?route=extension/extension/info&extension_id=15974">Brainy Filter</a>
+<p>You don't have to modify the module to fit the template. Just follow the installation instruction included in the module and your module will look exactly the same as in demo version. Or contact <a href="http://themeglobal.com/">our support staff</a> to get help.</p>
+	<p><img src="http://oc.themeglobal.com/images/techstore/module2.jpg" alt="Image Setting"></p>
+</section>	
+
+</body>
+</html>

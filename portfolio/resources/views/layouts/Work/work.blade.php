@@ -10,11 +10,11 @@
                 <!-- Work Content_1 start -->
                 @foreach($works as $work)
                     <div class="col-md-4 col-sm-6 work_1">
-                        <a data-toggle="modal" data-target="#myModal">
+                        <a data-toggle="modal" data-target="#{{$work->id}}">
                             <img src="{{$img_path}}projects/{{$work->title_image}}">
                         </a>
 
-                        <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                        <div class="modal fade" tabindex="-1" role="dialog" id="{{$work->id}}">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -29,11 +29,11 @@
 
                                     <div class="modal-body">
                                         <!-- carousel start -->
-                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <div id="myCarousel{{$work->id}}" class="carousel slide" data-ride="carousel">
                                             <!-- Indicators -->
                                             <ol class="carousel-indicators">
                                                 @foreach($work->images as $image)
-                                                    <li data-target="#myCarousel" data-slide-to="{{$loop->index}}" class="@if($loop->first)active @endif"></li>
+                                                    <li data-target="#myCarousel{{$work->id}}" data-slide-to="{{$loop->index}}" class="@if($loop->first)active @endif"></li>
                                                 @endforeach
                                             </ol>
 
@@ -48,25 +48,25 @@
 
 
                                             <!-- Controls -->
-                                            <a class="left carousel-control" href="#myCarousel" role="button"
+                                            <a class="left carousel-control" href="#myCarousel{{$work->id}}" role="button"
                                                data-slide="prev">
                                                 <span class="glyphicon glyphicon-chevron-left"
                                                       aria-hidden="true"></span>
                                                 <span class="sr-only">Previous</span>
                                             </a>
-                                            <a class="right carousel-control" href="#myCarousel" role="button"
+                                            <a class="right carousel-control" href="#myCarousel{{$work->id}}" role="button"
                                                data-slide="next">
                                                 <span class="glyphicon glyphicon-chevron-right"
                                                       aria-hidden="true"></span>
                                                 <span class="sr-only">Next</span>
                                             </a>
                                         </div>
-                                        <!-- carousel end -->
+                                        <!— carousel end —>
                                     </div>
 
 
                                     <div class="modal-footer">
-                                        <a href="https://github.com/leefecu/busbee-fe" target="_blank">
+                                        <a href="{{$work->link}}" target="_blank">
                                             <button type="button" class="btn btn-primary">Link</button>
                                         </a>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close

@@ -1,0 +1,68 @@
+
+
+.login_box_rap{
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    margin-top:150px;
+
+
+}
+
+.login_header_box{
+    margin-top:20px;
+}
+
+
+.login_header_box h3{
+    margin: 0;
+
+}
+.user_icon span{
+    color:#cccccc;
+    font-size:50px;
+
+
+}
+
+.login_inputbox_wrap{
+    margin-top:20px;
+    background-color:rgb(244,242,242);
+
+}
+
+.form-group{
+    margin-top:20px;
+}
+
+.login_checkbox{
+    margin-left:20px;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.password_input{
+    margin-top:5px;
+}
+
+.login_bottom_wrap{
+    background-color:rgb(28,28,28);
+
+}
+
+.login_bottom_container{
+    margin-top:15px;
+    margin-bottom: 15px;
+    color:white;
+}
+
+
+.login_bottom_wrap p{
+    color:white;
+
+}
+
+

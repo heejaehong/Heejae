@@ -1,8 +1,16 @@
 <template>
-    <li class="list-group-item" @click="getMenu(item.id)">
-        {{item.title}}
-        <span class="badge">1</span>
-    </li>
+        <router-link
+                v-bind:to="{path:'/menu/'+ item.path}"
+                tag="li"
+                class="list-group-item" >
+            {{item.title}}
+            <span class="badge">1</span>
+
+        </router-link>
+        <!--<router-link to="/{item.id}">-->
+
+
+        <!--</router-link>-->
 </template>
 <script>
 
@@ -14,7 +22,7 @@
 
     var srcInbox = Inbox;
     var srcNextWeek = NextWeek;
-    var srcTodayx = Today;
+    var srcToday = Today;
 
     export default{
      props:['item'],
@@ -26,23 +34,23 @@
     },
 
      methods:{
-         getMenu(id){
-             var screen = null;
-
-             switch(id){
-                 case 1:
-                     screen = srcInbox;
-                     break;
-                 case 2:
-                     screen = srcNextWeek;
-                     break;
-                 case 3:
-                     screen = srcTodayx;
-                     break;
-             }
-            eventBus.$emit('setScreen', screen);
-
-         }
+//         getMenu(id){
+//             var screen = null;
+//
+//             switch(id){
+//                 case 1:
+//                     screen = srcInbox;
+//                     break;
+//                 case 2:
+//                     screen = srcNextWeek;
+//                     break;
+//                 case 3:
+//                     screen = srcToday;
+//                     break;
+//             }
+//            eventBus.$emit('setScreen', screen);
+//
+//         }
      }
  }
 </script>

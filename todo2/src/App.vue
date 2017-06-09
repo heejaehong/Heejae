@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-        <app-header></app-header>
-        <app-menu></app-menu>
-        <app-contents></app-contents>
+        <router-view name="Header"></router-view>
+        <router-view name="Menu"></router-view>
+        <router-view></router-view>
     </div>
 </template>
 <script>
@@ -19,7 +19,7 @@
         components:{
             appHeader:Header,
             appMenu:Menu,
-            appContents:Contents
+            appContent:Contents
         }
     }
 </script>

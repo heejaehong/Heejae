@@ -4,7 +4,8 @@
             <ul class="list-group">
                 <app-menu-item
                         v-for="menu in menus"
-                        :item="menu"></app-menu-item>
+                        :item="menu">
+                </app-menu-item>
             </ul>
         </div>
         <div class="tab-menu">
@@ -21,9 +22,9 @@
  import Today from './contents/Today.vue';
 
  var dataMenu = [
-     {id:1, title:"inbox"},
-     {id:2, title:"Today"},
-     {id:3, title:"Next Week"},
+     {id:1, title:"inbox", path:"Inbox"},
+     {id:2, title:"Today", path:"Today"},
+     {id:3, title:"Next Week", path:"NextWeek"},
  ];
 
  export default{

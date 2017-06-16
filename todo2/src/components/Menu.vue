@@ -21,11 +21,7 @@
  import NextWeek from './contents/NextWeek.vue';
  import Today from './contents/Today.vue';
 
- var dataMenu = [
-     {id:1, title:"inbox", path:"Inbox"},
-     {id:2, title:"Today", path:"Today"},
-     {id:3, title:"Next Week", path:"NextWeek"},
- ];
+ var dataMenu = [];
 
  export default{
     data: function(){
@@ -38,11 +34,25 @@
          appMenuTab:MenuTab
      },
      methods:{
+        getList(){
 
+            this.$http.get('http://localhost:8001/api/getProjectList')
+                .then(response => {
+                    console.log(response);
+                    //console.log(this.dataMenu)
+                    this.menus = response.body.data.projects;
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
      },
      created(){
-        this.menus = dataMenu;
-     }
+        //this.menus = dataMenu;
+        this.getList();
+     },
+
+
  }
 </script>
 <style>

@@ -15,6 +15,10 @@ import appLogin from './login/loginComponent.vue'
         },
         components:{
             appLogin
+        },
+
+        methods:{
+
         }
     }
 

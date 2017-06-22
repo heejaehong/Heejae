@@ -18,9 +18,9 @@ class ProjectController extends Controller
     public function index()
     {
         $rsp = new AjaxResponse();
-        $projects = Project::where('status','=','PROCESSING');
+//        $projects = Project::where('status', '=', 'PROCESSING');
 
-        $list['projects'] = Project::all();
+        $list = Project::all();
         $rsp->data = $list;
         return $rsp->toArray();
     }
@@ -34,9 +34,9 @@ class ProjectController extends Controller
     {
         $project = new Project();
 
-        $project -> title = $request->title;
-        $project -> description = $request->description;
-        $project -> status = $request->status;
+        $project->title = $request->title;
+        $project->description = $request->description;
+        $project->status = $request->status;
 
         $project->save();
 
@@ -47,7 +47,7 @@ class ProjectController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -58,7 +58,7 @@ class ProjectController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -69,7 +69,7 @@ class ProjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -80,8 +80,8 @@ class ProjectController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -92,7 +92,7 @@ class ProjectController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

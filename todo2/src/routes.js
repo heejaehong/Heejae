@@ -20,20 +20,25 @@ export const routes = [
             }
         },
 
-    {path:'/login', component: Login},
+    {path:'/login', component: Login, name:Login},
 
     {path:'/signup', component: Signup},
 
-    {path:'/menu',
+
+    {path:'/todo',
         components:{
             default:Contents,
             Header:Header,
             Menu:Menu
         },
+        name:'todo',
+        meta:{
+            forAuth:true
+        },
 
         children:[
             {path:'', component:Inbox},
-            {path:'inbox', component:Inbox},
+            {path:'Inbox', component:Inbox},
             {path:'NextWeek', component:NextWeek},
             {path:'Today', component:Today}
         ]

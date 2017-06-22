@@ -8,6 +8,11 @@ class Todo extends Model
 {
     //
     protected $fillable = [
-        'project_id','title', 'description', 'due_date', 'status',
+        'title','date', 'type',
     ];
+
+    public function User()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

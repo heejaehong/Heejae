@@ -49,11 +49,13 @@
 </template>
 <script>
  var tempTodo = [
-     {id:'1', title:'테스트 일정 1', date:'2017-04-01', type:'inbox'},
-     {id:'2', title:'테스트 일정 2', date:'2017-04-01', type:'inbox'},
-     {id:'3', title:'테스트 일정 3', date:'2017-04-01', type:'inbox'},
-     {id:'4', title:'테스트 일정 4', date:'2017-04-01', type:'inbox'},
+//     {id:'1', title:'테스트 일정 1', date:'2017-04-01', type:'inbox'},
+//     {id:'2', title:'테스트 일정 2', date:'2017-04-01', type:'inbox'},
+//     {id:'3', title:'테스트 일정 3', date:'2017-04-01', type:'inbox'},
+//     {id:'4', title:'테스트 일정 4', date:'2017-04-01', type:'inbox'},
  ]
+
+ import api from '../../api'
 
 
  export default{
@@ -71,21 +73,26 @@
     },
      methods:{
          addTodo(){
-             this.todo.id = this.todoList.length + 1;
-             this.todoList.push(this.todo);
-         },
+             api.createTodo(this.todo).then( response => {
+                 if(response.body.success){
+                     this.todoList.push(response.body.data);
+                 }
 
+             });
+
+         },
 
          removed(id){
             var accepted = confirm('Do you want to remove this list?');
 
             if(accepted){
-
-                for(var i = 0; i < this.todoList.length; i++) {
-                    if(this.todoList[i].id === id){
-                        this.todoList.splice(i, 1);
+                api.deleteTodo(id).then(response => {
+                    for(var i = 0; i < this.todoList.length; i++) {
+                        if(this.todoList[i].id === id){
+                            this.todoList.splice(i, 1);
+                        }
                     }
-                }
+                })
 
             }
 
@@ -94,25 +101,34 @@
          readed(id){
             this.dataEdit = true;
 
-             for(var i = 0; i < this.todoList.length; i++) {
-                 if(this.todoList[i].id === id){
-                     this.todo = this.todoList[i]
+            api.showTodo(id).then(response => {
+                for(var i = 0; i < this.todoList.length; i++) {
+                    if(this.todoList[i].id === id){
+                        this.todo = this.todoList[i]
 
-                 }
-             }
-
+                    }
+                }
+            })
 
          },
 
-         EditTodo(id){
+         EditTodo(){
              this.dataEdit = false;
 
-             this.todo = this.todoList;
-                this.todo = {
-                    titie:'',
-                    date:'',
-                    type:''
-                }
+             api.updateTodo(this.todo, this.todo.id).then(response => {
+                 for(var i = 0; i < this.todoList.length; i++){
+                     if(this.todoList[i].id === response.body.data.id){
+                         this.todoList[i] = response.body.data
+                             this.todo = {
+                                 title:'',
+                                 date:'',
+                                 type:''
+                             }
+                     }
+
+                 }
+
+             })
 
          }
 
@@ -120,9 +136,14 @@
      },
 
      created(){
-         this.todoList = tempTodo;
-     }
+//         this.todoList = tempTodo;
+         api.getTodo().then( response => {
+             if(response.body.success){
+                 this.todoList = response.body.data;
+             }
 
+         });
+     }
 
  }
 </script>

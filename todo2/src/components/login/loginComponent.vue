@@ -41,6 +41,9 @@
     </div>
 </template>
 <script>
+
+    import api from '../../api'
+
     export default{
         data(){
             return {
@@ -53,21 +56,22 @@
 
                 let param = {
                     email:this.email, password:this.password
-                }
+                };
 
-                this.$http.post('http://localhost:8001/api/login', param)
-                    .then(response => {
-                        this.$auth.setToken(response.data.token);
-                        location.href = '/';
-                    })
-
-                    .catch(error => {
-                        if(error.status == 401){
-                            alert('Please check your email and password.');
-                        }else{
-                            alert('server error');
-                        }
-                    });
+                api.login(this,param);
+//                this.$http.post('http://localhost:8001/api/login', param)
+//                    .then(response => {
+//                        this.$auth.setToken(response.data.token);
+//                        location.href = '/';
+//                    })
+//
+//                    .catch(error => {
+//                        if(error.status == 401){
+//                            alert('Please check your email and password.');
+//                        }else{
+//                            alert('server error');
+//                        }
+//                    });
             }
         }
     }

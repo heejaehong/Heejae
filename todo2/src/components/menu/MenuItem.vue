@@ -1,6 +1,6 @@
 <template>
         <router-link
-                v-bind:to="{path:'/menu/'+ item.path}"
+                v-bind:to="{path:'/todo/'+ item.path}"
                 tag="li"
                 class="list-group-item" >
             {{item.title}}

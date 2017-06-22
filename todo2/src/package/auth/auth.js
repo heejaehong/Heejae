@@ -11,7 +11,6 @@ export default function (Vue) {
 
         setToken(token){
             localStorage.setItem('token', token);
-
         },
 
         destroyToken(){
@@ -21,7 +20,9 @@ export default function (Vue) {
         isAuthenticated(){
             if(this.getToken()){
                 return true;
+
             } else {
+
                 return false;
             }
         }

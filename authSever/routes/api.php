@@ -17,12 +17,19 @@ use App\Http\Controllers\AuthenticateController;
 
 Route::post('/login', 'AuthenticateController@authenticate');
 Route::post('/register', 'AuthenticateController@register');
-//Route::post('/getList', 'TodolistController@getList');
-//Route::post('/createList', 'TodolistController@createList');
 Route::get('/getProjectList', 'ProjectController@index');
 
-Route::middleware('jwt.auth')->get('/user', function (Request $request) {
-    return $request->user();
+//Route::middleware('jwt.auth')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::group(['middleware'=>'jwt.auth'], function(){
+    Route::get('/todo', 'TodoController@index');
+    Route::post('/createTodo', 'TodoController@create');
+    Route::get('/deleteTodo/{id}', 'TodoController@destroy');
+    Route::post('/updateTodo/{id}', 'TodoController@update');
+    Route::get('/showTodo/{id}', 'TodoController@show');
+
 });
 
 

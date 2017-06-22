@@ -24,4 +24,9 @@ import appLogin from './login/loginComponent.vue'
 
 </script>
 <style>
+    .container{
+        margin-top:50px;
+
+    }
+
 </style>

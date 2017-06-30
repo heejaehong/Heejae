@@ -16,13 +16,11 @@
             // data model
             }
         },
-
         components:{
             appHeader:Header,
             appMenu:Menu,
             appContent:Contents
         }
-
     }
 </script>
 <style>

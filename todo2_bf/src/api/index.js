@@ -33,26 +33,26 @@ export default({
             })
     },
 
-    // createTodo:function(data){
-    //     return Vue.http.post('createTodo', data);
-    // },
+    createTodo:function(data){
+        return Vue.http.post('createTodo', data);
+    },
 
-    // getTodo:function(){
-    //     return Vue.http.get('todo');
-    // },
+    getTodo:function(){
+        return Vue.http.get('todo');
+    },
     
-    // deleteTodo:function (id) {
-    //     return Vue.http.get('deleteTodo/' + id);
-    //
-    // },
+    deleteTodo:function (id) {
+        return Vue.http.get('deleteTodo/' + id);
 
-    // updateTodo:function (data, id){
-    //     return Vue.http.post('updateTodo/' + id, data);
-    // }
+    },
 
-    // showTodo:function (id){
-    //     return Vue.http.get('showTodo/' + id);
-    // }
+    updateTodo:function (data, id){
+        return Vue.http.post('updateTodo/' + id, data);
+    },
+
+    showTodo:function (id){
+        return Vue.http.get('showTodo/' + id);
+    }
 
 
 })

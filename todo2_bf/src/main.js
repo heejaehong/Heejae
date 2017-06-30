@@ -4,8 +4,6 @@ import VueResource from 'vue-resource'
 import App from './App.vue'
 import Auth from './package/auth/auth'
 
-import {store} from './store/store'
-
 import {routes} from './routes'
 
 Vue.use(VueRouter);
@@ -39,7 +37,6 @@ router.beforeEach((to, from, next) => {
 
 new Vue({
     el: '#app',
-    store,
     router,
     render: h => h(App)
 });
